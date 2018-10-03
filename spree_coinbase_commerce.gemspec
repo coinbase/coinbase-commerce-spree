@@ -8,16 +8,14 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_coinbase_commerce'
   s.version     = SpreeCoinbaseCommerce.version
-  s.summary     = 'Add extension summary here'
-  s.description = 'Add (optional) extension description here'
+  s.summary     = 'Coinbase Commerce gateway'
+  s.description = 'Coinbase Commerce gateway'
   s.required_ruby_version = '>= 2.2.7'
 
-  s.author    = 'You'
-  s.email     = 'you@example.com'
-  s.homepage  = 'https://github.com/your-github-handle/spree_coinbase_commerce'
+  s.author    = 'Coinbase Commerce'
+  s.homepage  = 'https://github.com/coinbase/coinbase-commerce-spree'
   s.license = 'BSD-3-Clause'
 
-  # s.files       = `git ls-files`.split("\n").reject { |f| f.match(/^spec/) && !f.match(/^spec\/fixtures/) }
   s.require_path = 'lib'
   s.requirements << 'none'
 
