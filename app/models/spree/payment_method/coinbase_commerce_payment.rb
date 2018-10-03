@@ -14,4 +14,3 @@ module Spree
       "https://api.commerce.coinbase.com"
     end
   end
-end
