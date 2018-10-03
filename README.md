@@ -6,7 +6,7 @@ Accept crypto payments on your Spree store with the official Coinbase Commerce S
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_coinbase_commerce', github: '[your-github-handle]/spree_coinbase_commerce'
+  gem 'spree_coinbase_commerce', github: 'coinbase/coinbase-commerce-spree'
   gem 'coinbase_commerce', github: 'coinbase/coinbase-commerce-ruby'
   ```
 
@@ -19,8 +19,9 @@ Accept crypto payments on your Spree store with the official Coinbase Commerce S
   ```ruby
   bundle exec rails g spree_coinbase_commerce:install
   ```
+4. Add ```<your_spree_host>/spree_coinbase/notify``` to Coinbase Commerce webhook settings
 
-4. Restart your server
+5. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
 
@@ -40,11 +41,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_coinbase_commerce/factories'
 ```
 
-
-## Contributing
-
-If you'd like to contribute, please take a look at the
-[instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
-pull request.
-
-Copyright (c) 2018 [name of extension creator], released under the New BSD License
+Copyright (c) 2018 Coinbase Commerce, released under the New BSD License
