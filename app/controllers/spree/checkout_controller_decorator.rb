@@ -30,8 +30,7 @@ module Spree
                 "amount": order.total,
                 "currency": order.currency
             },
-            "redirect_url": "http://#{request.host}:#{request.port}/orders/#{order.number}",
-            "requested_info": ["name", "email"]
+            "redirect_url": "http://#{request.host}:#{request.port}/orders/#{order.number}"
         }
         charge = client.charge.create(charge_info)
         redirect_to "#{charge.hosted_url}"
