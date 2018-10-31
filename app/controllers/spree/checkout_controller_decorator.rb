@@ -18,9 +18,11 @@ module Spree
                                          payment_method: payment_method,
                                          order_id: order.id)
         payment.started_processing!
+        name = payment_method.name.truncate(30)
+        description = payment_method.description.truncate(80)
         charge_info = {
-            "name": "Order #%s" % order.number,
-            "description": "Spree order",
+            "name": name.empty? ? "Order #{order.number}" : name,
+            "description": description.empty? ? 'Pay with cryptocurrency' : description,
             "pricing_type": "fixed_price",
             "metadata": {
                 "order_id": order.id,
