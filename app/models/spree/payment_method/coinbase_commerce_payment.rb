@@ -7,7 +7,8 @@ module Spree
 
     def create_client
       CoinbaseCommerce::Client.new(api_key: get_preference(:api_key),
-                                   api_ver: get_preference(:api_version))
+                                   api_ver: get_preference(:api_version),
+                                   api_url: api_uri)
     end
 
     def api_uri
