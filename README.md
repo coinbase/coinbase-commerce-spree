@@ -41,4 +41,8 @@ Simply add this require statement to your spec_helper:
 require 'spree_coinbase_commerce/factories'
 ```
 
+## Integrate with other e-commerce platforms
+[Coinbase Commerce Integrations](https://commerce.coinbase.com/integrate)
+
+
 Copyright (c) 2018 Coinbase Commerce, released under the New BSD License
